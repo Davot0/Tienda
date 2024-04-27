@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tienda en Línea</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="product">
+        <img src="product1.jpg" alt="Producto 1">
+        <h2>Producto 1</h2>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Precio: $10</p>
+        <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="product2.jpg" alt="Producto 2">
+        <h2>Producto 2</h2>
+        <p>Descripción: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Precio: $15</p>
+        <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="product3.jpg" alt="Producto 3">
+        <h2>Producto 3</h2>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Precio: $10</p>
+        <button onclick="agregarAlCarrito('Producto 3', 20)">Agregar al Carrito</button>
+    </div>
+
+    <div class="product">
+        <img src="product4.jpg" alt="Producto 4">
+        <h2>Producto 4</h2>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Precio: $10</p>
+        <button onclick="agregarAlCarrito('Producto 4', 90)">Agregar al Carrito</button>
+    </div>
+    
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total">Total: $0</p>
+        <button onclick="pagar()" class="boton-pagar">Pagar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
